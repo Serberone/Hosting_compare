@@ -19,9 +19,9 @@
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="main.html">Главная</a>
-                    <a class="navbar-item" href="Виды.html">Виды хостинга</a>
-                    <a class="navbar-item" href="Критерии.html">Критерии выбора</a>
-                    <a class="navbar-item" href="Сравнение.html">Таблица сравнения</a>
+                    <a class="navbar-item" href="Types.html">Виды хостинга</a>
+                    <a class="navbar-item" href="Criteria.html">Критерии выбора</a>
+                    <a class="navbar-item" href="Compare.html">Таблица сравнения</a>
                 </div>
             </div>
         </div>
@@ -75,14 +75,17 @@
 
     <!-- для бургер-меню -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const burger = document.querySelector('.navbar-burger');
-            const menu = document.querySelector('#navbarMenu');
-            burger.addEventListener('click', () => {
-                menu.classList.toggle('is-active');
-                burger.classList.toggle('is-active');
+        document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".navbar-burger");
+        const menu = document.querySelector("#navbarMenu");
+        
+        if (burger && menu) {
+            burger.addEventListener("click", () => {
+                burger.classList.toggle("is-active");
+                menu.classList.toggle("is-active");
             });
-        });
+        }
+    });
     </script>
 </body>
 </html>
